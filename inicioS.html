@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <!-- MEMO: update me with `git checkout gh-pages && git merge master && git push origin gh-pages` -->
+    <head>
+        <meta charset="utf-8">
+        <title>Zentre</title>
+
+
+
+
+
+        <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="dist/css/ripples.min.css" rel="stylesheet">
+        <link href="dist/css/material-wfont.min.css" rel="stylesheet">
+        <link href="dist/css/snackbar.min.css" rel="stylesheet">
+        <link href="stylesheets/styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{padding-top:0px}#banner{border-bottom:none}.page-header h1{font-size:4em}.bs-docs-section{margin-top:8em}.bs-component{position:relative}.bs-component .modal{position:relative;top:auto;right:auto;left:auto;bottom:auto;z-index:1;display:block}.bs-component .modal-dialog{width:90%}.bs-component .popover{position:relative;display:inline-block;width:220px;margin:20px}#source-button{position:absolute;top:0;right:0;z-index:100;font-weight:bold;padding: 5px 10px;}.progress{margin-bottom:10px}footer{margin:5em 0}footer li{float:left;margin-right:1.5em;margin-bottom:1.5em}footer p{clear:left;margin-bottom:0}.splash{padding:4em 0 0;background-color:#141d27;color:#fff;text-align:center}.splash h1{font-size:4em}.splash #social{margin:2em 0}.splash .alert{margin:2em 0}.section-tout{padding:4em 0 3em;border-bottom:1px solid rgba(0,0,0,0.05);background-color:#eaf1f1}.section-tout .fa{margin-right:.5em}.section-tout p{margin-bottom:3em}.section-preview{padding:4em 0 4em}.section-preview .preview{margin-bottom:4em;background-color:#eaf1f1}.section-preview .preview .image{position:relative}.section-preview .preview .image:before{box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);position:absolute;top:0;left:0;width:100%;height:100%;content:"";pointer-events:none}.section-preview .preview .options{padding:1em 2em 2em;border:1px solid rgba(0,0,0,0.05);border-top:none;text-align:center}.section-preview .preview .options p{margin-bottom:2em}.section-preview .dropdown-menu{text-align:left}.section-preview .lead{margin-bottom:2em}@media (max-width:767px){.section-preview .image img{width:100%}}.sponsor{text-align:center}.sponsor a:hover{text-decoration:none}@media (max-width:767px){#banner{margin-bottom:2em;text-align:center}}
+            .infobox .btn-sup { color: rgba(0,0,0,0.5); font-weight: bold; font-size: 15px; line-height: 30px; }
+            .infobox .btn-sup img { opacity: 0.5; height: 30px;}
+            .infobox .btn-sup span { padding-left: 10px; position: relative; top: 2px; }
+            .icons-material .row { margin-bottom: 20px; }
+            .icons-material .col-xs-2 { text-align: center; }
+            .icons-material i { font-size: 34pt; }
+
+            .icon-preview {
+                display: inline-block;
+                padding: 10px;
+                margin: 10px;
+                background: #D5D5D5;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            .icon-preview span {
+                display: none;
+                position: absolute;
+                background: black;
+                color: #EEE;
+                padding: 5px 8px;
+                font-size: 15px;
+                font-family: Roboto;
+                border-radius: 2px;
+                z-index: 10;
+            }
+            .icon-preview:hover i { color: #4285f4; }
+            .icon-preview:hover span { display: block; cursor: text; }
+
+        </style>
+
+        <script>
+        $(document).ready(function(){
+
+                $("#header").fadeIn(3000);
+
+        });
+        </script>
+
+        <link href="dist/css/simple-sidebar.css" rel="stylesheet">
+
+
+    </head>
+    <body>
+      <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <p align="center" style="color:#fff; font-size: 2.6rem; margin-top: 0.2rem">GNP</p>
+    </nav>
+
+      <!-- <div id="header" class="no-display">
+        <h1 style="color: #333">Pizza Hut</h1>
+      </div> -->
+      <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Orders</a>
+                </li>
+                <li>
+                    <a href="#">Buttons administration</a>
+                </li>
+                <li>
+                    <a href="#">Edit profile</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12" style="padding-top: 32px">
+                        <h1>Ordenes</h1>
+                        <div>
+                          <i class="mdi-action-search"></i>
+                          <input class="form-control busqueda" id="inputSearch" placeholder="Search">
+                        </div>
+                        <br>
+
+
+                        <!--First Order-->
+
+                        <h3>Order: 002 - 25/03/2015</h3>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5 col-md-4">
+                            <div class="jumbotron">
+                              <ul>
+                                <li><b>First name:</b></li>
+                                <li class="sin-puntos">Andrea Carolina</li>
+                                <li><b>Last name:</b></li>
+                                <li class="sin-puntos">Nacif</li>
+                                <li><b>Street:</b></li>
+                                <li class="sin-puntos">Fighter</li>
+                                <li><b>Home number (Internal):</b></li>
+                                <li class="sin-puntos">42</li>
+                                <li><b>Home number (External):</b></li>
+                                <li class="sin-puntos">-</li>
+                                <li><b>City:</b></li>
+                                <li class="sin-puntos">New York City</li>
+                                <li><b>Region/State:</b></li>
+                                <li class="sin-puntos">New York</li>
+                                <li><b>ZIP:</b></li>
+                                <li class="sin-puntos">46002</li>
+                                <li><b>Country:</b></li>
+                                <li class="sin-puntos">USA</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-7 col-md-8">
+                            <div class="jumbotron">
+                              <ul>
+                                <li><b>Car tag:</b></li>
+                                <li class="sin-puntos">HGO-432</li>
+                                <li><b>Car brand:</b></li>
+                                <li class="sin-puntos">Nissan</li>
+                                <li><b>Accident Description:</b></li>
+                                <li class="sin-puntos">The car crashed with another</li>
+                                <li><b>Phone number:</b></li>
+                                <li class="sin-puntos">4268911331</li>
+                                <li><b>Expenses:</b></li>
+                                <li class="sin-puntos">$5000</li>
+                                <li><b>Emergency number</b></li>
+                                <li class="sin-puntos">911</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+
+
+
+
+        <!--<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script>
+            (function(){
+
+                var $button = $("<div id='source-button' class='btn btn-primary btn-xs'>&lt; &gt;</div>").click(function(){
+                    var index =  $('.bs-component').index( $(this).parent() );
+                    $.get(window.location.href, function(data){
+                        var html = $(data).find('.bs-component').eq(index).html();
+                        html = cleanSource(html);
+                        $("#source-modal pre").text(html);
+                        $("#source-modal").modal();
+                    })
+
+                });
+
+                $('.bs-component [data-toggle="popover"]').popover();
+                $('.bs-component [data-toggle="tooltip"]').tooltip();
+
+                $(".bs-component").hover(function(){
+                    $(this).append($button);
+                    $button.show();
+                }, function(){
+                    $button.hide();
+                });
+
+                function cleanSource(html) {
+                    var lines = html.split(/\n/);
+
+                    lines.shift();
+                    lines.splice(-1, 1);
+
+                    var indentSize = lines[0].length - lines[0].trim().length,
+                        re = new RegExp(" {" + indentSize + "}");
+
+                    lines = lines.map(function(line){
+                        if (line.match(re)) {
+                            line = line.substring(indentSize);
+                        }
+
+                        return line;
+                    });
+
+                    lines = lines.join("\n");
+
+                    return lines;
+                }
+
+                $(".icons-material .icon").each(function() {
+                    $(this).after("<br><br><code>" + $(this).attr("class").replace("icon ", "") + "</code>");
+                });
+
+            })();
+
+        </script>
+        <script src="dist/js/ripples.min.js"></script>
+        <script src="dist/js/material.min.js"></script>
+        <script src="http://fezvrasta.github.io/snackbarjs/dist/snackbar.min.js"></script>
+
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/noUiSlider/6.2.0/jquery.nouislider.min.js"></script>
+        <script>
+            $(function() {
+                $.material.init();
+                $(".shor").noUiSlider({
+                    start: 40,
+                    connect: "lower",
+                    range: {
+                        min: 0,
+                        max: 100
+                    }
+                });
+
+                $(".svert").noUiSlider({
+                    orientation: "vertical",
+                    start: 40,
+                    connect: "lower",
+                    range: {
+                        min: 0,
+                        max: 100
+                    }
+                });
+            });
+        </script>
+        <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,228 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+li p{
+    color: #999999;
+    margin-right: 15px;
+}
+li span{
+    color: #999999;
+    margin-right: 15px;
+}
+button{
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    margin-bottom: 8px !important;
+}
+.logo{
+    margin-top: 25px;
+    width: 50%
+}
+.navbar-brand>img {
+    display: inline;
+}
+
+.navbar-brand{
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+.container-fluid>.navbar-header{
+margin-right: 0px;
+margin-left: 0px;
+}
+.navbar-header {
+    width: 100%;
+}
+
+.col-sm-6{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#wrapper {
+    padding-right: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled1 {
+    padding-right: 250px;
+}
+
+#sidebar1-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 250px;
+    width: 0;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #000;
+    
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled1 #sidebar1-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#wrapper.toggled1 #page-content-wrapper {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: absolute;
+    margin-left: -250px;
+}
+#page-content-wrapper{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+/* Sidebar Styles */
+
+.sidebar1-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar1-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+    border-bottom:  1px solid;
+    border-bottom-color: gray;
+}
+
+.sidebar1-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar1-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar1-nav li a:active,
+.sidebar1-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar1-nav > .sidebar1-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar1-nav > .sidebar1-brand a {
+    color: #999999;
+}
+
+.sidebar1-nav > .sidebar1-brand a:hover {
+    color: #fff;
+    background: none;
+}
+h2 {
+  color: white;
+  text-align: center;
+  margin-top: 55%;
+  width: 100%;
+  position: absolute;
+}
+.module {
+    background: url(https://www.sorteostec.org/imagenes/contents/20141217115134206.jpg);
+    background-size: cover;
+    height: 423px;
+}
+.titulo{
+    color: #4b9fdd;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+    background-color:#4b9fdd;
+}
+.navbar-inverse {
+    background-color:#4b9fdd;
+}
+@media (min-width: 768px){
+    .navbar-toggle {
+    display: inherit;
+    }
+    button{
+    margin-left: 15px !important;
+    margin-right: 30px !important;
+    margin-bottom: 8px !important;
+    }
+    .logo{
+    width: 19%;
+    margin-top: 13px;
+    }
+    .sidebar1-nav > .sidebar1-brand {
+        height: 50px;
+    }
+    .navbar-inverse{
+        background-color:#4b9fdd;
+    }
+}
+
+/*@media(min-width:768px) {
+    #wrapper {
+        padding-right: 250px;
+    }
+
+    #wrapper.toggled1 {
+        padding-right: 0;
+    }
+
+    #sidebar1-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled1 #sidebar1-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled1 #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }*/ 
+}

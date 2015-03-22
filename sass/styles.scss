@@ -1,0 +1,29 @@
+.titulo {
+  font-size: 4em;
+  font-family: 'Bentham', serif;
+  margin-top: 1em;
+}
+
+@media(min-width:768px){
+  .titulo {
+    font-size: 10em;
+    margin-top: 0;
+  }
+  .busqueda {
+    width: 40%;
+  }
+}
+
+body {
+
+}
+
+.no-display {
+  display: none;
+}
+.busqueda {
+  display:inline;
+}
+.sin-puntos {
+  list-style-type: none;
+}
